@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to react-native-design-system 👋</h1>
+<h1 align="center">Welcome to simple-component-kit 👋</h1>
 <p>
   <a href="https://www.npmjs.com/package/react-native-design-system"><img src="https://img.shields.io/npm/v/react-native-design-system.svg?style=flat-square"></a>
   <a href="https://github.com/iamshadmirza/react-native-design-system#readme">
@@ -21,7 +21,7 @@
   </a>
 </p>
 
-`React Native Design System` is a set of design rules and component library that lets you prototype faster with easy to use cross-platform components. Let's get started!
+`Simple Component Kit` is a set of design rules and component library that lets you prototype faster with easy to use cross-platform components. Let's get started!
 
 ### 🏠 [Homepage](https://github.com/iamshadmirza/react-native-design-system#readme)
 ### 📄 [Documentation](https://rnds.netlify.com)

@@ -2,26 +2,25 @@ import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, select, boolean } from "@storybook/addon-knobs";
 import { action } from '@storybook/addon-actions';
 import Feather from 'react-native-vector-icons/Feather';
-import {Container} from '../Container/Container';
-import {Card} from './Card';
+import {Container} from './Container';
 import {Button} from '../Button/Button';
 import {Title} from '../Title/Title';
 
-<Meta title="Design System|Card" component={Card} />
+<Meta title="Design System|Container" component={Container} />
 
-# Card
-Cards contain content and actions about single subject.
-
+# Container
+The container centers your content horizontally. It's the most basic layout element.
+ 
 # Usage
 ```js
-import { Card, Button } from 'react-native-design-system';
+import { Container, Button } from 'react-native-design-system';
 
-<Card>
+<Container>
   <Title>Hello world</Title>
   <Button onPress={() => this.handleChange())}>
     Press Me
   </Button>
-</Card>
+</Container>
 ```
 
 # Padding
@@ -29,13 +28,11 @@ Padding can be applied using p tag.
 
 <Preview>
   <Story name="p">
-       <Container>
-         <Card p={4}>
+        <Container p={4}>
           <Button onPress={action('pressed')}>
             Press Me
           </Button>
-        </Card>
-       </Container>
+        </Container>
   </Story>
 </Preview>
 
@@ -44,13 +41,12 @@ Margin can be applied using m tag.
 
 <Preview>
   <Story name="m">
-      <Container>
-        <Card m={4}>
+        <Container m={4}>
           <Button onPress={action('pressed')}>
             Press Me
           </Button>
-        </Card>
-      </Container> 
+        </Container>
+       
   </Story>
 </Preview>
 
@@ -59,31 +55,27 @@ Elevation can be applied using elevation tag.
 
 <Preview>
   <Story name="elevation">
-    <Container>
-        <Card elevation={12}>
+        <Container elevation={12}>
           <Button onPress={action('pressed')}>
             Press Me
           </Button>
-        </Card>
-    </Container> 
+        </Container>
   </Story>
 </Preview>
 
 # Playground
-Play with Card in Canvas mode.
+Play with Container in Canvas mode.
 
 <Story name="playground" parameters={{ decorators: [withKnobs] }}>
-    <Container>
-      <Card
-        m={select('m', [4,6, 8, 16], 8)}
-        p={select('p', [4,6, 8, 16], 8)}
-      >
-        <Title>Hello world</Title>
-        <Button
-          length="short"
-          onPress={action('pressed')}>
-          Press Me
-        </Button>
-      </Card>
+    <Container
+      m={select('m', [4,6, 8, 16], 8)}
+      p={select('p', [4,6, 8, 16], 8)}
+    >
+    <Title>Hello world</Title>
+    <Button
+      length="short"
+      onPress={action('pressed')}>
+      Press Me
+    </Button>
     </Container>
 </Story>

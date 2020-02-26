@@ -3,7 +3,7 @@ import colour from "color";
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { useTheme } from 'util/ThemeProvider';
 
-interface ButtonProps {
+export interface ButtonProps {
     onPress?: () => void;
     disabled: boolean;
     children: any;
@@ -12,16 +12,19 @@ interface ButtonProps {
 
 export const Button = ({ onPress, disabled = false, children, color }: ButtonProps) => {
     const theme = useTheme();
-    const { colors, roundness } = theme;
+    const { colors, roundness, dark } = theme;
     let backgroundColor: string = color ? color : colors.primary;
-    const isDark = colour(colors.primary).isDark();
+    const isDark = colour(backgroundColor).isDark();
     let textColor: string = isDark ? "white" : "black";
     if (disabled) {
-        backgroundColor = colour(isDark ? "white" : "black")
-            .alpha(0.12)
-            .rgb()
-            .string();
+        backgroundColor = colour(backgroundColor)
+            .lighten(0.6)
+            .hex()
+        textColor = colour(backgroundColor)
+            .lighten(0.5)
+            .hex()
     }
+
     let borderRadius = roundness;
     const textStyle = {
         color: textColor
