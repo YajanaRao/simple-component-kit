@@ -1,19 +1,5 @@
-<h1 align="center">Welcome to simple-component-kit 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/react-native-design-system"><img src="https://img.shields.io/npm/v/react-native-design-system.svg?style=flat-square"></a>
-  <a href="https://github.com/iamshadmirza/react-native-design-system#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/iamshadmirza/react-native-design-system/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/iamshadmirza/react-native-design-system/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
-  <a href="https://twitter.com/iamshadmirza">
-    <img alt="Twitter: iamshadmirza" src="https://img.shields.io/twitter/follow/iamshadmirza.svg?style=social" target="_blank" />
-  </a>
-</p>
+<h1 align="center">Welcome to simple-component-kit </h1>
+
 
 <p align="center">
   <a href="https://rnds.netlify.com/">
@@ -22,6 +8,8 @@
 </p>
 
 `Simple Component Kit` is a set of design rules and component library that lets you prototype faster with easy to use cross-platform components. Let's get started!
+
+Inspired by [react-native-design-system](https://github.com/iamshadmirza/react-native-design-system) 
 
 ### 🏠 [Homepage](https://github.com/iamshadmirza/react-native-design-system#readme)
 ### 📄 [Documentation](https://rnds.netlify.com)
@@ -155,14 +143,6 @@ function App(){
 - [ ] [Deck](src/)
 - [x] [Text](src/Text/Text.js)
 - [ ] [Tooltip](src/)
-
-## Author
-
-👤 **Shad Mirza**
-
-* Twitter: [@iamshadmirza](https://twitter.com/iamshadmirza)
-* Github: [@iamshadmirza](https://github.com/iamshadmirza)
-* Blogs: [@iamshadmirza](https://iamshadmirza.hashnode.dev)
 
 ## 🤝 Contributing
 
