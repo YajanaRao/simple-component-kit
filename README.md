@@ -1,15 +1,11 @@
 <h1 align="center">Welcome to simple-component-kit </h1>
 
-
-<p align="center">
-  <a href="https://rnds.netlify.com/">
-    <img alt="react-native-react-system" src="https://raw.githubusercontent.com/iamshadmirza/BlogsByShad/master/blogs/saved_data/rnds_logo.png" width="250">
-  </a>
-</p>
-
 `Simple Component Kit` is a set of design rules and component library that lets you prototype faster with easy to use cross-platform components. Let's get started!
 
-Inspired by [react-native-design-system](https://github.com/iamshadmirza/react-native-design-system) 
+## Credits
+- Project structure inspired by [react-native-design-system](https://github.com/iamshadmirza/react-native-design-system) 
+- Components Inspired by [react-native-paper](https://callstack.github.io/react-native-paper/index.html)
+- Design Principles [Material Design](https://material.io/)
 
 ### 🏠 [Homepage](https://github.com/iamshadmirza/react-native-design-system#readme)
 ### 📄 [Documentation](https://rnds.netlify.com)
