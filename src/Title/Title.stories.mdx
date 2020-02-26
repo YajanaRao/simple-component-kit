@@ -1,0 +1,46 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select } from "@storybook/addon-knobs";
+import { Title } from './Title';
+
+<Meta title="Design System|Title" component={Title} />
+
+# Title
+Simple `Title` element that gives you different sizes and colors.
+
+# Usage
+```js
+import { Title } from 'react-native-design-system';
+
+<Title>
+  Hello Design System
+</Title>
+```
+
+# Props
+<Props of={Title} />
+
+
+
+# Size
+Uses size defined in `fontSize` in theme.
+
+<Preview>
+  <Story name="size">
+     
+      <Title size={24}>
+        Hello Design System
+      </Title>
+      
+  </Story>
+</Preview>
+
+# Playground
+Play with Title in Canvas mode.
+
+<Story name="playground" parameters={{ decorators: [withKnobs] }}>
+  <Title
+    size={select('size', [20, 22, 25], 20)}
+  >
+  Hello World
+  </Title>
+</Story>

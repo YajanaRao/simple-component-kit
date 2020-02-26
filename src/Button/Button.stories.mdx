@@ -1,0 +1,59 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from "@storybook/addon-knobs";
+import { action } from '@storybook/addon-actions';
+import Feather from 'react-native-vector-icons/Feather';
+import {Button} from './Button';
+
+<Meta title="Design System|Button" component={Button} />
+
+# Button
+A Button is a clickable view to carry out actions such as clearing user input or submitting the form.
+
+# Usage
+```js
+import { Button } from 'react-native-design-system';
+
+<Button onPress={() => this.handleChange())}>
+  Press Me
+</Button>
+```
+
+# Props
+<Props of={Button} />
+
+# Disabled
+Whether the button is disabled. A disabled button is greyed out and onPress is not called on interaction.
+
+<Preview>
+  <Story name="disabled">
+      <Button disabled onPress={action('pressed')}>
+        Press Me
+      </Button>
+      
+  </Story>
+</Preview>
+
+# Color
+Custom text color for flat button, or background color for contained button.
+
+<Preview>
+  <Story name="color">
+      <Button color="tomato" onPress={action('pressed')}>
+        Press Me
+      </Button>
+     
+  </Story>
+</Preview>
+
+# Playground
+Play with Button in Canvas mode.
+
+<Story name="playground" parameters={{ decorators: [withKnobs] }}>
+  <Button
+    color={select('color', ['red', 'blue', 'green'], 'pink')}
+    disabled={boolean('disabled', false)}
+    onPress={action('pressed')}
+  >
+  Press Me
+  </Button>
+</Story>

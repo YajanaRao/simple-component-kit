@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from "@storybook/addon-knobs";
+import { action } from '@storybook/addon-actions';
+import Feather from 'react-native-vector-icons/Feather';
+import {Card} from './Card';
+import {Button} from '../Button/Button';
+
+<Meta title="Design System|Card" component={Card} />
+
+# Card
+Card is a wrapper component with a small padding. It included center, left and right aligned card to auto align childrens. Use `Box`, `Stack` or `Inline` when making a layout.
+
+# Usage
+```js
+import { Card, Button } from 'react-native-design-system';
+
+<Card>
+  <Button onPress={() => this.handleChange())}>
+    Press Me
+  </Button>
+</Card>
+```
+
+# Playground
+Play with Card in Canvas mode.
+
+<Story name="playground" parameters={{ decorators: [withKnobs] }}>
+    <Card
+      space={select('space', ['none','xxsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', 'xxlarge'], 'medium')}
+      row={boolean('row', false)}
+      shadow={boolean('shadow', false)}
+      align={select('center',['left', 'center', 'right'], 'left')}
+    >
+    <Button
+      length="short"
+      onPress={action('pressed')}>
+      Press Me
+    </Button>
+    </Card>
+</Story>
