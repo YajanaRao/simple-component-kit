@@ -5,7 +5,7 @@ import { useTheme } from 'util/ThemeProvider';
 
 export interface ButtonProps {
     onPress?: () => void;
-    disabled: boolean;
+    disabled?: boolean;
     children: any;
     color?: string;
 }
